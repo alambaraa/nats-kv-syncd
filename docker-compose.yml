@@ -10,3 +10,9 @@ services:
     command: ["-js"]
     ports:
       - "5222:4222"
+
+  nats-hub:
+    image: nats:latest
+    command: ["-js"]
+    ports:
+      - "6222:4222"
