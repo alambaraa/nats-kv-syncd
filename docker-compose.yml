@@ -1,10 +1,12 @@
-version: "3.8"
 services:
   nats-a:
     image: nats:latest
     command: ["-js"]
-    ports: - "4222:4222"
+    ports:
+      - "4222:4222"
+
   nats-b:
     image: nats:latest
     command: ["-js"]
-    ports: - "5222:4222"
+    ports:
+      - "5222:4222"
